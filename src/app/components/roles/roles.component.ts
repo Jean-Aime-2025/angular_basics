@@ -25,6 +25,8 @@ export class RolesComponent implements OnInit {
   // }
 
   roles: IRole[] = [];
+
+  isLoading: boolean = true;
   
   http = inject(HttpClient);
 
@@ -35,6 +37,7 @@ export class RolesComponent implements OnInit {
   getRoles(){
     this.http.get("/api/GetAllRoles").subscribe((res:any)=>{
       this.roles = res.data;
+      this.isLoading = false;
       console.log(this.roles);
     })
   }

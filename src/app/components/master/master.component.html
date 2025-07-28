@@ -4,7 +4,7 @@
   <button type="button" class="btn" (click)="changeTab('designation')" 
   [ngClass]="currentTab === 'designation' ? 'btn-success' : 'btn-primary'">Designation</button>
 </div>
-<div class="row">
+<div class="row pt-2">
   <div class="col-12" *ngIf="currentTab === 'roles'">
     <app-roles></app-roles>
   </div>

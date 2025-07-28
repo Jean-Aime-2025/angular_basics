@@ -55,8 +55,12 @@
   </div>
 </div> -->
 
-
 <div class="row">
+  @if (isLoading) {
+  <div class="col-8">
+    <div class="spinner-border text-primary"></div>
+  </div>
+  }@else {
   <div class="col-8">
     <table class="table table-bordered table-striped">
       <thead>
@@ -73,4 +77,5 @@
       </tbody>
     </table>
   </div>
+  }
 </div>
