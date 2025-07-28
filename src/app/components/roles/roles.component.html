@@ -1,0 +1,76 @@
+<p>roles works!</p>
+<!-- <div class="row">
+  <div class="col-3">
+    <p>{{ firstName }}</p>
+  </div>
+  <div class="col-3">
+    <p>{{ lastName }}</p>
+  </div>
+  <div class="col-3">
+    <p>{{ currentDate }}</p>
+  </div>
+  <div class="col-3">
+    <p>{{ selectedState }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3">
+    <input type="text" [value]="currentDate" class="form-control" />
+  </div>
+  <div class="col-3">
+    <input [type]="inputType" />
+  </div>
+  <div class="col-3">
+    <input type="text" [(ngModel)]="firstName" />
+  </div>
+  <div class="col-3">
+    <input type="text" [(ngModel)]="firstName" />
+  </div>
+  <div class="col-3">
+    <select [(ngModel)]="selectedState">
+      <option value="MP">MP</option>
+      <option value="MH">MH</option>
+      <option value="MV">MV</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3">
+    <button class="btn btn-success" (click)="sayHello()">Say Hello</button>
+  </div>
+  <div class="col-3">
+    <button class="btn btn-success" (click)="sayBarca('Barca')">
+      Say Hello
+    </button>
+  </div>
+  <div class="col-3">
+    <button class="btn btn-success" (click)="sayBarca('Visca Barca')">
+      Say Barca
+    </button>
+  </div>
+  <div class="col-3">
+    <button class="btn btn-success" (click)="sayBarca('Vamos 🔴🔵')">
+      Say Vamos
+    </button>
+  </div>
+</div> -->
+
+
+<div class="row">
+  <div class="col-8">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Role ID</th>
+          <th>Role Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let role of roles">
+          <td>{{ role.roleId }}</td>
+          <td>{{ role.role }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
